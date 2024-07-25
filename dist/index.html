@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script
+  src="https://kit.fontawesome.com/4c536a6bd5.js"
+  crossorigin="anonymous"
+></script>
+<script defer src="main.js"></script></head>
+<body>
+    <div id="background-container"></div>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <form id="weather-form">
+            <input type="text" id="location" placeholder="Enter location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="unit-selector">
+            <label>
+                <input type="radio" name="unit" value="celsius" checked> °C
+            </label>
+            <label>
+                <input type="radio" name="unit" value="fahrenheit"> °F
+            </label>
+        </div>
+        <div id="loading" class="hidden">Loading...</div>
+        
+        <div id="weather-info-container" class="hidden">
+            <div id="weather-info"></div>
+        </div>
+    </div>
+</body>
+</html>
